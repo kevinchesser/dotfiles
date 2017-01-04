@@ -12,4 +12,5 @@ call plug#begin('~/.vim/plugged')
 Plug 'https://github.com/leafgarland/typescript-vim.git'
 Plug 'vim-airline/vim-airline'
 Plug 'https://github.com/tpope/vim-fugitive.git'
+Plug 'elixir-lang/vim-elixir'
 call plug#end()
