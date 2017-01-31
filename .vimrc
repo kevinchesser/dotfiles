@@ -14,4 +14,5 @@ Plug 'vim-airline/vim-airline'
 Plug 'https://github.com/tpope/vim-fugitive.git'
 Plug 'elixir-lang/vim-elixir'
 Plug 'rondale-sc/vim-spacejam'
+Plug 'tpope/vim-commentary'
 call plug#end()
