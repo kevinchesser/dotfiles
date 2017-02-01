@@ -23,8 +23,11 @@ colo delek
 set number
 set hlsearch
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
-"set colorcolumn=80
-"set cursorline
+set colorcolumn=80
+set cursorline
 set title
 syntax on
 filetype plugin indent on
+
+
+highlight ColorColumn ctermbg=8
