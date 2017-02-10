@@ -29,5 +29,5 @@ set title
 syntax on
 filetype plugin indent on
 
-
+"set the colorcolumn to grey
 highlight ColorColumn ctermbg=8
