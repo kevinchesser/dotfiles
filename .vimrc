@@ -20,14 +20,15 @@ let g:airline#extensions#branch#enabled = 1
 colo delek
 
 "vim settings
-set number
-set hlsearch
+set number      "Line numbers
+set hlsearch    "Highlight words that match search
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
-set colorcolumn=80
-set cursorline
-set title
-syntax on
-filetype plugin indent on
+set colorcolumn=80 "color coulmn at 80 chars
+set cursorline     "line under the line your cursor is currently on
+set title          "name of file open in your window title
+set textwidth=80   "use visual select + gq to wrap text to 80 columns
+syntax on          "syntax highlighting
+filetype plugin indent on   "proper intedting
 
 "set the colorcolumn to grey
 highlight ColorColumn ctermbg=8
