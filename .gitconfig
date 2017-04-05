@@ -1,0 +1,7 @@
+[alias]
+        tree = log --graph --oneline --decorate --color --all
+[user]
+	name =  
+	email = 
+[core]
+	editor = vim
