@@ -1,5 +1,6 @@
 [alias]
         tree = log --graph --oneline --decorate --color --all
+        rbpush = "!f() { git push --force origin "$1"; }; f"
 [user]
 	name =  
 	email = 
