@@ -6,3 +6,20 @@
 	email = 
 [core]
 	editor = vim
+
+#Notes
+#Rebasing
+#git checkout -b develop
+#git checkout master
+#git pull
+#git checkout develop
+#git rebase master
+#git rbpush
+#git checkout master
+#git pull
+#git merge develop
+#Merging
+#git checkout develop
+#git commit in develop
+#git checkout master
+#git merge develop
