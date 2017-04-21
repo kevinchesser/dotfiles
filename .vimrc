@@ -33,5 +33,5 @@ filetype plugin indent on   "proper intedting
 "set the colorcolumn to grey
 highlight ColorColumn ctermbg=8
 
-"Go to one before the end of the line
+"Go to one before the end of the line in visual select mode
 :vmap # $h
