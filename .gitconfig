@@ -1,6 +1,7 @@
 [alias]
         tree = log --graph --oneline --decorate --color --all
         rbpush = "!f() { git push --force origin "$1"; }; f"
+        fb = "!f() { git filter-branch --force --index-filter ' git rm --cached --ignore-unmatch "$1"'  --prune-empty --tag-name-filter cat -- --all; }; f"
 [user]
 	name =  
 	email = 
@@ -23,3 +24,6 @@
 #git commit in develop
 #git checkout master
 #git merge develop
+#
+#fb - remove a file from the git repo and all of its history
+#     for when you accidentally add some kind of credentials or token
