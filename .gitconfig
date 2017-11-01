@@ -2,9 +2,13 @@
         tree = log --graph --oneline --decorate --color --all
         rbpush = "!f() { git push --force origin "$1"; }; f"
         fb = "!f() { git filter-branch --force --index-filter ' git rm --cached --ignore-unmatch "$1"'  --prune-empty --tag-name-filter cat -- --all; }; f"
+        squash = "!f() { git reset --soft "$1"; }; f"
+	git = !exec git
+        checkoute = checkout
 [user]
-	name =  
-	email = 
+	name =
+	email =
+
 [core]
 	editor = vim
 
@@ -19,11 +23,24 @@
 #git checkout master
 #git pull
 #git merge develop
+
 #Merging
 #git checkout develop
 #git commit in develop
 #git checkout master
 #git merge develop
-#
+
 #fb - remove a file from the git repo and all of its history
 #     for when you accidentally add some kind of credentials or token
+
+#delete branch
+#remote
+#git push origin --delete <branch_name>
+#local
+#git branch -D <branch_name>
+
+#View diff of a commit
+#git diff COMMITHASH^!
+
+#Change previous commit message
+#git commit --amend -m "Message"
