@@ -11,6 +11,7 @@ Plug 'elixir-lang/vim-elixir'
 Plug 'rondale-sc/vim-spacejam'
 Plug 'tpope/vim-commentary'
 Plug 'vim-erlang/vim-erlang-omnicomplete'
+Plug 'elzr/vim-json'
 call plug#end()
 
 "airline settings
@@ -22,6 +23,7 @@ colo delek
 "vim settings
 set number      "Line numbers
 set hlsearch    "Highlight words that match search
+autocmd Filetype javascript setlocal ts=2 sts=2 sw=2 "Set tabs to 2 spaces in js
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 set colorcolumn=80 "color coulmn at 80 chars
 set cursorline     "line under the line your cursor is currently on
