@@ -1,1 +1,2 @@
-#took everything out lol
+alias qgit="git"
+alias giot="git"
