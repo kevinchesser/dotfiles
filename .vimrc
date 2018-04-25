@@ -8,6 +8,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'https://github.com/tpope/vim-fugitive.git'
 Plug 'rondale-sc/vim-spacejam'
 Plug 'tpope/vim-commentary'
+Plug 'rust-lang/rust.vim'
+Plug 'cespare/vim-toml'
 call plug#end()
 
 "airline settings
