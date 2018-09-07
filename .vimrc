@@ -62,3 +62,12 @@ nmap <S-w> :bp <BAR> bd #<CR>
 
 "Go to one before the end of the line in visual select mode
 :vmap # $h
+
+" Tab completion when in insert mode and not indenting
+function! CleverTab()
+  if strpart( getline('.'), col('.')-2, 1 ) =~ '^\s*$'
+    return "\<Tab>"
+  else
+    return "\<C-N>"
+endfunction
+:inoremap <Tab> <C-R>=CleverTab()<CR>
