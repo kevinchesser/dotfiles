@@ -1,0 +1,74 @@
+# top-most EditorConfig file
+root = true
+
+[*]
+end_of_line = crlf
+trim_trailing_whitespace = true
+
+[*.cs]
+# Naming Symbols
+# static_const_fields - Define static and const fields
+dotnet_naming_symbols.static_const_fields.applicable_kinds = field
+dotnet_naming_symbols.static_const_fields.required_modifiers = static, const
+## static_readonly_fields - Define static and readonly fields
+dotnet_naming_symbols.static_readonly_fields.applicable_kinds = field
+dotnet_naming_symbols.static_readonly_fields.required_modifiers = static, readonly
+# private_fields - Define private fields
+dotnet_naming_symbols.private_fields.applicable_kinds = field
+dotnet_naming_symbols.private_fields.applicable_accessibilities = private, protected, protected_internal
+
+# Naming Styles
+# pascal_case - Define the Pascal_case style
+dotnet_naming_style.pascal_case.capitalization = pascal_case
+# leading_underscore - Define the Leading_underscore style
+dotnet_naming_style.leading_underscore.capitalization = camel_case
+dotnet_naming_style.leading_underscore.required_prefix = _
+
+# Naming Rules
+# Static const fields must be PascalCase
+dotnet_naming_rule.static_const_fields_must_be_pascal_case.severity = warning
+dotnet_naming_rule.static_const_fields_must_be_pascal_case.symbols = static_const_fields
+dotnet_naming_rule.static_const_fields_must_be_pascal_case.style = pascal_case
+# Static readonly fields must be PascalCase
+dotnet_naming_rule.static_readonly_fields_must_be_pascal_case.severity = warning
+dotnet_naming_rule.static_readonly_fields_must_be_pascal_case.symbols = static_readonly_fields
+dotnet_naming_rule.static_readonly_fields_must_be_pascal_case.style = pascal_case
+# Private fields must have a be CamelCase and have a leading underscore
+dotnet_naming_rule.private_fields_must_have_leading_underscore.severity = warning
+dotnet_naming_rule.private_fields_must_have_leading_underscore.symbols = private_fields
+dotnet_naming_rule.private_fields_must_have_leading_underscore.style = leading_underscore
+
+# Organize usings
+# https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-code-style-settings-reference#usings
+dotnet_sort_system_directives_first = true
+
+# Types
+csharp_style_var_when_type_is_apparent = false:error
+csharp_style_var_for_built_in_types = false:error
+csharp_style_var_elsewhere = false:error
+
+# General Style
+dotnet_style_explicit_tuple_names = true:error
+dotnet_style_null_propagation = true:error
+csharp_style_inlined_variable_declaration = true:warning
+csharp_prefer_braces = false:warning
+csharp_space_between_square_brackets = false
+csharp_space_between_method_declaration_parameter_list_parentheses = false
+csharp_space_between_empty_square_brackets = false
+csharp_space_before_comma = false
+csharp_space_after_comma = true
+csharp_space_before_colon_in_inheritance_clause = true
+csharp_space_after_colon_in_inheritance_clause = true
+csharp_space_around_binary_operators = before_and_after
+csharp_space_after_semicolon_in_for_statement = true
+csharp_space_after_keywords_in_control_flow_statements = true
+csharp_space_after_cast = false
+csharp_prefer_simple_default_expression = false:error
+csharp_indent_switch_labels = true
+csharp_indent_case_contents = true
+
+[*.{cs,xml}]
+indent_style = space
+indent_size = 4
+tab_width = 4
+
