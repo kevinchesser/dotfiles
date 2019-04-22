@@ -8,9 +8,10 @@
 [user]
 	name =
 	email =
-
 [core]
 	editor = vim
+[credential]
+	helper = cache --timeout=2628000
 
 #Notes
 #Rebasing
@@ -66,5 +67,14 @@
 #                git commit-tree "$@";
 #        fi' HEAD
 
-[credential]
-	helper = cache --timeout=2628000
+# Remove untracked files from the working tree
+# Step 1 is to show what will be deleted by using the -n option:
+# git clean -n
+# Clean Step - beware: this will delete files:
+# git clean -f
+
+# Merge and take changes all changes from current branch or branch being merges
+# git merge <branchname> -s <strategy>
+# strategy values
+# ours = current branch
+# theirs = branch merging in
