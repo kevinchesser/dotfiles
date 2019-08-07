@@ -1,0 +1,57 @@
+This file is cheating because it isn't actually a dotfile... oops.
+
+Firefox - Browser
+https://www.mozilla.org/en-US/firefox/new/
+ - Vim Vixen
+ - uBlock Origin
+ - Bandcamp Volume
+ - DuckDuckGo Privacy Essentials
+ - EditThisCookie
+ - JSON Lite
+ - Measure-it
+ - Momentum
+ - Stylus 
+
+Insomnia - Tool to make http requests
+https://insomnia.rest/
+
+DBeaver - DB Management tool
+https://dbeaver.io/
+
+Vim (see .vimrc)
+
+Visual Studio - IDE I use for C#
+https://visualstudio.microsoft.com/downloads/
+ - Visafora
+   - https://marketplace.visualstudio.com/items?itemName=TomasRestrepo.Viasfora
+ - VsVim
+   - https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim
+ - Color Theme Editor
+   - https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2019ColorThemeEditor
+ - Trailing Whitespace Visualizer
+   - https://marketplace.visualstudio.com/items?itemName=MadsKristensen.TrailingWhitespaceVisualizer
+ - Color theme - my own 
+   - https://github.com/kevinchesser/vs2017-eclipse-dark-theme
+
+Notepad++ 
+https://notepad-plus-plus.org/
+
+Pianobar - console based pandora.com player
+Windows - https://github.com/thedmd/pianobar-windows
+Linux/Mac - Just use package manager
+
+ZSH
+Package manager install
+  - oh-my-zsh
+    - https://ohmyz.sh/
+    - Theme = kevin.zsh-theme
+
+Ripcord - Native slack/discord client (30mb~ ram usage)
+https://cancel.fm/ripcord/
+
+Thunderbird - Email client
+https://www.thunderbird.net/en-US/
+
+Launchy - Windows dmenu alternative
+https://www.launchy.net/
+    Theme - https://www.deviantart.com/saifulkader/art/Minimal-for-Launchy-371577867
